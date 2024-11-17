@@ -1,11 +1,14 @@
 {
   "name": "farewell",
   "version": "1.0.0",
-  "description": "Landwind is a free and open-source landing page built with Tailwind CSS and Flowbite for SaaS and product websites.",
+  "description": "Hummingbird Hammocks was a small business that specialized in ultralight camping and backpacking gear. We were known for our high-quality, lightweight hammocks and tarps that were perfect for backpacking, camping, and other outdoor adventures.",
   "main": "index.js",
   "scripts": {
     "dev": "npx tailwindcss -i ./input.css -o ./output.css --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:css": "npx tailwindcss -i ./input.css | postcss -o ./dist/output.css",
+    "build:html": "npx html-minifier-terser index.html --output ./dist/index.html --collapse-whitespace --remove-comments --minify-css true --minify-js true",
+    "copy:assets": "cpx './images/**/*' ./dist/images && cpx './*.!(html|json)' ./dist",
+    "build": "npm run build:css && npm run build:html && npm run copy:assets"
   },
   "repository": {
     "type": "git",
@@ -28,9 +31,13 @@
   "license": "MIT",
   "homepage": "https://hummingbirdhammocks.com",
   "devDependencies": {
-    "tailwindcss": "^3.1.4"
+    "autoprefixer": "^10.4.20",
+    "cssnano": "^7.0.6",
+    "html-minifier-terser": "^7.2.0",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.15"
   },
   "dependencies": {
-    "flowbite": "^1.4.7"
+    "flowbite": "^2.5.2"
   }
 }
