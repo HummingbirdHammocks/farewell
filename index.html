@@ -40,28 +40,60 @@
     <link href="./flowbite.css" rel="stylesheet" />
     <link href="./output.css" rel="stylesheet" />
     <style>
-      .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
-      .focus\:not-sr-only:focus { position: static; width: auto; height: auto; padding: 0.5rem 1rem; margin: 0; overflow: visible; clip: auto; white-space: normal; }
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+      .focus\:not-sr-only:focus {
+        position: static;
+        width: auto;
+        height: auto;
+        padding: 0.5rem 1rem;
+        margin: 0;
+        overflow: visible;
+        clip: auto;
+        white-space: normal;
+      }
     </style>
   </head>
   <body class="bg-[#fdfdf6]">
     <!-- Skip Navigation Link -->
-    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded-md z-50 focus:outline-2 focus:outline-blue-800 focus:outline-offset-2">Skip to main content</a>
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded-md z-50 focus:outline-2 focus:outline-blue-800 focus:outline-offset-2"
+      >Skip to main content</a
+    >
     <header class="fixed w-full">
       <nav class="bg-[#fdfdf6] border-gray-200 py-2.5">
         <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
-          <a href="#main-content" class="flex items-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2 focus:rounded" aria-label="Hummingbird Hammocks - Skip to main content">
-            <img src="./images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Hummingbird Hammocks Logo" />
-            <span class="self-center text-xl font-semibold whitespace-nowrap"
+          <a
+            href="#main-content"
+            class="flex items-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2 focus:rounded"
+            aria-label="Hummingbird Hammocks - Skip to main content"
+          >
+            <img
+              src="./images/logo.svg"
+              class="h-6 mr-2 sm:mr-3 sm:h-9"
+              alt="Hummingbird Hammocks Logo"
+            />
+            <span class="self-center text-lg sm:text-xl font-semibold whitespace-nowrap"
               >Hummingbird Hammocks</span
             >
           </a>
           <div class="flex items-center lg:order-2">
             <a
               href="https://github.com/HummingbirdHammocks"
-              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
+              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-xs sm:text-sm px-2 sm:px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
               aria-label="Visit Hummingbird Hammocks GitHub repositories - View all open source designs and code"
-              >View GitHub Repositories</a
+              ><span class="hidden md:inline">View GitHub Repositories</span
+              ><span class="md:hidden">Repos</span></a
             >
           </div>
         </div>
@@ -75,122 +107,122 @@
         class="bg-cover bg-center bg-no-repeat"
         style="background-image: url('./images/SimpleVectorLakesideHammockCampsite.jpg')"
       >
-      <div
-        class="grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28"
-      >
-        <div class="mr-auto place-self-center lg:col-span-7">
-          <div
-            class="flex flex-col max-w-lg p-6 mx-auto text-center text-white bg-[#0f220e] border border-gray-900 rounded-3xl shadow"
-          >
-            <h1
-              class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl"
+        <div
+          class="grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28"
+        >
+          <div class="mr-auto place-self-center lg:col-span-7">
+            <div
+              class="flex flex-col max-w-lg p-6 mx-auto text-center text-white bg-[#0f220e] border border-gray-900 rounded-3xl shadow"
             >
-              Blue Skies &<br />Happy Trails
-            </h1>
-            <p class="max-w-2xl mb-6 font-light lg:mb-4 md:text-lg lg:text-xl">
-              After 10 wonderful years of serving outdoor enthusiasts like you, Hummingbird Hammocks
-              is now closed.
-            </p>
-            <p class="max-w-2xl mb-6 font-light lg:mb-4 md:text-lg lg:text-xl">
-              This page and our open source repositories will remain live for the foreseeable future
-              as a tribute to the amazing community that supported us.
-            </p>
-            <p class="max-w-2xl mb-6 font-light lg:mb-4 md:text-lg lg:text-xl">
-              All of our open source licenses have been updated to MIT, so feel free to use our
-              designs and code in any way you see fit.
-            </p>
+              <h1
+                class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl"
+              >
+                Blue Skies &<br />Happy Trails
+              </h1>
+              <p class="max-w-2xl mb-6 font-light lg:mb-4 md:text-lg lg:text-xl">
+                After 10 wonderful years of serving outdoor enthusiasts like you, Hummingbird
+                Hammocks is now closed.
+              </p>
+              <p class="max-w-2xl mb-6 font-light lg:mb-4 md:text-lg lg:text-xl">
+                This page and our open source repositories will remain live for the foreseeable
+                future as a tribute to the amazing community that supported us.
+              </p>
+              <p class="max-w-2xl mb-6 font-light lg:mb-4 md:text-lg lg:text-xl">
+                All of our open source licenses have been updated to MIT, so feel free to use our
+                designs and code in any way you see fit.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- End block -->
-    <!-- Start block -->
-    <section class="bg-[#f3f3ec]">
-      <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
-        <!-- Row -->
-        <div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
-          <div class="text-gray-700 sm:text-lg">
-            <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900">
-              What was Hummingbird Hammocks?
-            </h2>
-            <p class="mb-8 font-light lg:text-xl">
-              Hummingbird Hammocks was a small business that specialized in ultralight camping and
-              backpacking gear. We were known for our high-quality, lightweight hammocks and tarps
-              that were perfect for backpacking, camping, and other outdoor adventures.
-            </p>
-            <!-- List -->
-            <ul role="list" class="pt-8 space-y-5 border-t border-gray-200 my-7">
-              <li class="flex space-x-3">
-                <!-- Icon -->
-                <svg
-                  width="24px"
-                  height="24px"
-                  viewBox="0 0 512 512"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                >
-                  <path
+      </section>
+      <!-- End block -->
+      <!-- Start block -->
+      <section class="bg-[#f3f3ec]">
+        <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
+          <!-- Row -->
+          <div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
+            <div class="text-gray-700 sm:text-lg">
+              <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900">
+                What was Hummingbird Hammocks?
+              </h2>
+              <p class="mb-8 font-light lg:text-xl">
+                Hummingbird Hammocks was a small business that specialized in ultralight camping and
+                backpacking gear. We were known for our high-quality, lightweight hammocks and tarps
+                that were perfect for backpacking, camping, and other outdoor adventures.
+              </p>
+              <!-- List -->
+              <ul role="list" class="pt-8 space-y-5 border-t border-gray-200 my-7">
+                <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="#000000"
+                      d="M470.7 20L368.2 49.81l41.5-28.09c-26.2 5.92-59.3 17.5-100.9 36.19l-67.9 70.79L265 79.25c-23.3 12.96-48 29.95-71.8 49.85l-15.8 64.3-3.4-47.6c-23.5 21.6-45.6 45.6-63.9 70.9-19.23 26.5-34.26 54.5-41.79 82.4l-28.12-18.8c2.52 23.7 10.31 44.3 23.09 63.2l-33.62-10.3c7.64 23.5 20.13 38.7 41.25 51-11.83 33.3-17.38 68.1-23.34 102.8l18.4 3.1C87.31 277.4 237.9 141.8 374 81.72l6.9 17.38c-121.7 54.5-216.3 146.5-265.8 279.1 18.1.1 35.8-2.1 52.2-6.3l4.9-60.9 13.1 55.5c10.9-4 20.9-8.8 29.8-14.4l-20.7-43.5 32.8 34.8c8-6.4 14.6-13.6 19.6-21.5 30.4-47.5 62.2-94.7 124.8-134.2l-45.7-16.2 70.1 2.1c11.4-5.8 23.4-12.9 32.5-19.6l-49.7-4 74.7-17.6c5.8-5.8 11.2-11.9 16.1-18 17.3-21.94 29-44.78 26.2-65.55-1.3-10.39-7.5-20.16-17.6-25.63-2.5-1.3-5.2-2.45-7.5-3.22z"
+                    />
+                  </svg>
+                  <span class="text-base font-medium leading-tight text-gray-900"
+                    >Lightest Hammock & Tree Straps</span
+                  >
+                </li>
+                <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M6.25 4.5C5.2835 4.5 4.5 5.2835 4.5 6.25V7.75C4.5 8.16421 4.16421 8.5 3.75 8.5C3.33579 8.5 3 8.16421 3 7.75V6.25C3 4.45507 4.45507 3 6.25 3H7.75C8.16421 3 8.5 3.33579 8.5 3.75C8.5 4.16421 8.16421 4.5 7.75 4.5H6.25Z"
+                      fill="#212121"
+                    />
+                    <path
+                      d="M10.2 8C8.95737 8 7.95001 9.00736 7.95001 10.25V13.75C7.95001 14.9926 8.95737 16 10.2 16H13.7C14.9427 16 15.95 14.9926 15.95 13.75V10.25C15.95 9.00736 14.9427 8 13.7 8H10.2Z"
+                      fill="#212121"
+                    />
+                    <path
+                      d="M17.75 4.5C18.7165 4.5 19.5 5.2835 19.5 6.25V7.75C19.5 8.16421 19.8358 8.5 20.25 8.5C20.6642 8.5 21 8.16421 21 7.75V6.25C21 4.45507 19.5449 3 17.75 3H16.25C15.8358 3 15.5 3.33579 15.5 3.75C15.5 4.16421 15.8358 4.5 16.25 4.5L17.75 4.5Z"
+                      fill="#212121"
+                    />
+                    <path
+                      d="M17.75 19.5C18.7165 19.5 19.5 18.7165 19.5 17.75V16.25C19.5 15.8358 19.8358 15.5 20.25 15.5C20.6642 15.5 21 15.8358 21 16.25V17.75C21 19.5449 19.5449 21 17.75 21H16.25C15.8358 21 15.5 20.6642 15.5 20.25C15.5 19.8358 15.8358 19.5 16.25 19.5H17.75Z"
+                      fill="#212121"
+                    />
+                    <path
+                      d="M6.25 19.5C5.2835 19.5 4.5 18.7165 4.5 17.75L4.5 16.25C4.5 15.8358 4.16421 15.5 3.75 15.5C3.33579 15.5 3 15.8358 3 16.25V17.75C3 19.5449 4.45507 21 6.25 21H7.75C8.16421 21 8.5 20.6642 8.5 20.25C8.5 19.8358 8.16421 19.5 7.75 19.5H6.25Z"
+                      fill="#212121"
+                    />
+                  </svg>
+                  <span class="text-base font-medium leading-tight text-gray-900"
+                    >Smallest Packing Hammock & Tree Straps</span
+                  >
+                </li>
+                <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg
                     fill="#000000"
-                    d="M470.7 20L368.2 49.81l41.5-28.09c-26.2 5.92-59.3 17.5-100.9 36.19l-67.9 70.79L265 79.25c-23.3 12.96-48 29.95-71.8 49.85l-15.8 64.3-3.4-47.6c-23.5 21.6-45.6 45.6-63.9 70.9-19.23 26.5-34.26 54.5-41.79 82.4l-28.12-18.8c2.52 23.7 10.31 44.3 23.09 63.2l-33.62-10.3c7.64 23.5 20.13 38.7 41.25 51-11.83 33.3-17.38 68.1-23.34 102.8l18.4 3.1C87.31 277.4 237.9 141.8 374 81.72l6.9 17.38c-121.7 54.5-216.3 146.5-265.8 279.1 18.1.1 35.8-2.1 52.2-6.3l4.9-60.9 13.1 55.5c10.9-4 20.9-8.8 29.8-14.4l-20.7-43.5 32.8 34.8c8-6.4 14.6-13.6 19.6-21.5 30.4-47.5 62.2-94.7 124.8-134.2l-45.7-16.2 70.1 2.1c11.4-5.8 23.4-12.9 32.5-19.6l-49.7-4 74.7-17.6c5.8-5.8 11.2-11.9 16.1-18 17.3-21.94 29-44.78 26.2-65.55-1.3-10.39-7.5-20.16-17.6-25.63-2.5-1.3-5.2-2.45-7.5-3.22z"
-                  />
-                </svg>
-                <span class="text-base font-medium leading-tight text-gray-900"
-                  >Lightest Hammock & Tree Straps</span
-                >
-              </li>
-              <li class="flex space-x-3">
-                <!-- Icon -->
-                <svg
-                  width="24px"
-                  height="24px"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M6.25 4.5C5.2835 4.5 4.5 5.2835 4.5 6.25V7.75C4.5 8.16421 4.16421 8.5 3.75 8.5C3.33579 8.5 3 8.16421 3 7.75V6.25C3 4.45507 4.45507 3 6.25 3H7.75C8.16421 3 8.5 3.33579 8.5 3.75C8.5 4.16421 8.16421 4.5 7.75 4.5H6.25Z"
-                    fill="#212121"
-                  />
-                  <path
-                    d="M10.2 8C8.95737 8 7.95001 9.00736 7.95001 10.25V13.75C7.95001 14.9926 8.95737 16 10.2 16H13.7C14.9427 16 15.95 14.9926 15.95 13.75V10.25C15.95 9.00736 14.9427 8 13.7 8H10.2Z"
-                    fill="#212121"
-                  />
-                  <path
-                    d="M17.75 4.5C18.7165 4.5 19.5 5.2835 19.5 6.25V7.75C19.5 8.16421 19.8358 8.5 20.25 8.5C20.6642 8.5 21 8.16421 21 7.75V6.25C21 4.45507 19.5449 3 17.75 3H16.25C15.8358 3 15.5 3.33579 15.5 3.75C15.5 4.16421 15.8358 4.5 16.25 4.5L17.75 4.5Z"
-                    fill="#212121"
-                  />
-                  <path
-                    d="M17.75 19.5C18.7165 19.5 19.5 18.7165 19.5 17.75V16.25C19.5 15.8358 19.8358 15.5 20.25 15.5C20.6642 15.5 21 15.8358 21 16.25V17.75C21 19.5449 19.5449 21 17.75 21H16.25C15.8358 21 15.5 20.6642 15.5 20.25C15.5 19.8358 15.8358 19.5 16.25 19.5H17.75Z"
-                    fill="#212121"
-                  />
-                  <path
-                    d="M6.25 19.5C5.2835 19.5 4.5 18.7165 4.5 17.75L4.5 16.25C4.5 15.8358 4.16421 15.5 3.75 15.5C3.33579 15.5 3 15.8358 3 16.25V17.75C3 19.5449 4.45507 21 6.25 21H7.75C8.16421 21 8.5 20.6642 8.5 20.25C8.5 19.8358 8.16421 19.5 7.75 19.5H6.25Z"
-                    fill="#212121"
-                  />
-                </svg>
-                <span class="text-base font-medium leading-tight text-gray-900"
-                  >Smallest Packing Hammock & Tree Straps</span
-                >
-              </li>
-              <li class="flex space-x-3">
-                <!-- Icon -->
-                <svg
-                  fill="#000000"
-                  height="24px"
-                  width="24px"
-                  version="1.1"
-                  id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 512 512"
-                  xml:space="preserve"
-                  aria-hidden="true"
-                >
-                  <g>
+                    height="24px"
+                    width="24px"
+                    version="1.1"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 512 512"
+                    xml:space="preserve"
+                    aria-hidden="true"
+                  >
                     <g>
-                      <path
-                        d="M488.282,71.424c-73.859-31.376-152.008-47.285-232.278-47.285S97.582,40.049,23.726,71.424
+                      <g>
+                        <path
+                          d="M488.282,71.424c-73.859-31.376-152.008-47.285-232.278-47.285S97.582,40.049,23.726,71.424
 			c-20.298,8.62-29.417,32.443-20.018,52.412l27.03,57.442c7.976,16.949,27.392,26.212,46.025,20.804
 			c0.649,1.18,92.078,167.358,146.625,266.474c14.17,25.749,51.169,25.734,65.33-0.019l146.519-266.456
 			c18.661,5.423,38.061-3.866,46.031-20.803l27.031-57.443C517.682,103.898,508.579,80.045,488.282,71.424z M110.348,189.474
@@ -200,113 +232,113 @@
 			c-59.997-25.141-123.604-37.936-188.723-37.936c-64.896,0-128.547,12.72-188.723,37.936c-1.731,0.726-3.659-0.079-4.416-1.686
 			l-27.03-57.443c-0.822-1.746-0.038-3.846,1.773-4.615c69.443-29.499,142.922-44.458,218.396-44.458s148.953,14.957,218.397,44.458
 			C476.207,104.871,476.98,107.001,476.171,108.718z"
-                      />
+                        />
+                      </g>
                     </g>
-                  </g>
-                </svg>
-                <span class="text-base font-medium leading-tight text-gray-900"
-                  >Real Parachute Materials and Construction</span
-                >
-              </li>
-            </ul>
+                  </svg>
+                  <span class="text-base font-medium leading-tight text-gray-900"
+                    >Real Parachute Materials and Construction</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <img
+              class="w-full mb-4 rounded-3xl lg:mb-0 lg:flex"
+              src="./images/SingleHammockForestGreenPackedCloseUp.jpg"
+              alt="Forest Green Single Hammock packed up close by granite rocks"
+            />
           </div>
-          <img
-            class="w-full mb-4 rounded-3xl lg:mb-0 lg:flex"
-            src="./images/SingleHammockForestGreenPackedCloseUp.jpg"
-            alt="Forest Green Single Hammock packed up close by granite rocks"
-          />
-        </div>
-        <!-- Row -->
-        <div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
-          <img
-            class="w-full mb-4 rounded-3xl lg:mb-0 lg:flex"
-            src="./images/SingleHammockSlateGrayInCanyon.jpg"
-            alt="Slate Gray Single Hammock hanging in a canyon"
-          />
-          <div class="text-gray-700 sm:text-lg">
-            <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900">
-              Why did we close?
-            </h2>
-            <p class="mb-8 font-light lg:text-xl">
-              There's never a simple answer to a question like this, the factors that lead to a
-              business closing are complex and varied. In our case, it was a combination of personal
-              reasons, market changes, and some unexpected challenges.
-            </p>
-            <!-- List -->
-            <ul role="list" class="pt-8 space-y-5 border-t border-gray-200 my-7">
-              <li class="flex space-x-3">
-                <!-- Icon -->
-                <svg
-                  version="1.1"
-                  id="Uploaded to svgrepo.com"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  width="60px"
-                  height="60px"
-                  viewBox="0 0 32 32"
-                  xml:space="preserve"
-                  aria-hidden="true"
-                >
-                  <style type="text/css">
-                    .afiado_een {
-                      fill: #0b1719;
-                    }
-                  </style>
-                  <path
-                    class="afiado_een"
-                    d="M6,11h4v17H6V11z M22,16v12h4V16H22z M14,28h4V4h-4V28z"
-                  />
-                </svg>
-                <span class="text-base font-medium leading-tight text-gray-900"
-                  ><strong>Market Changes:</strong> The post-COVID-19 landscape has brought
-                  significant shifts in the outdoor gear market, making it challenging for us to
-                  maintain viability with our current business model and cash flow.</span
-                >
-              </li>
-              <li class="flex space-x-3">
-                <!-- Icon -->
-                <svg
-                  height="100px"
-                  width="100px"
-                  version="1.1"
-                  id="_x32_"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 512 512"
-                  xml:space="preserve"
-                  aria-hidden="true"
-                >
-                  <style type="text/css">
-                    .st0 {
-                      fill: #000000;
-                    }
-                  </style>
-                  <g>
+          <!-- Row -->
+          <div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
+            <img
+              class="w-full mb-4 rounded-3xl lg:mb-0 lg:flex"
+              src="./images/SingleHammockSlateGrayInCanyon.jpg"
+              alt="Slate Gray Single Hammock hanging in a canyon"
+            />
+            <div class="text-gray-700 sm:text-lg">
+              <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900">
+                Why did we close?
+              </h2>
+              <p class="mb-8 font-light lg:text-xl">
+                There's never a simple answer to a question like this, the factors that lead to a
+                business closing are complex and varied. In our case, it was a combination of
+                personal reasons, market changes, and some unexpected challenges.
+              </p>
+              <!-- List -->
+              <ul role="list" class="pt-8 space-y-5 border-t border-gray-200 my-7">
+                <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg
+                    version="1.1"
+                    id="Uploaded to svgrepo.com"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="60px"
+                    height="60px"
+                    viewBox="0 0 32 32"
+                    xml:space="preserve"
+                    aria-hidden="true"
+                  >
+                    <style type="text/css">
+                      .afiado_een {
+                        fill: #0b1719;
+                      }
+                    </style>
                     <path
-                      class="st0"
-                      d="M313.017,170.176c-2.922-0.841-5.968,0.854-6.801,3.784c-0.603,2.126-1.896,3.978-3.62,5.3
+                      class="afiado_een"
+                      d="M6,11h4v17H6V11z M22,16v12h4V16H22z M14,28h4V4h-4V28z"
+                    />
+                  </svg>
+                  <span class="text-base font-medium leading-tight text-gray-900"
+                    ><strong>Market Changes:</strong> The post-COVID-19 landscape has brought
+                    significant shifts in the outdoor gear market, making it challenging for us to
+                    maintain viability with our current business model and cash flow.</span
+                  >
+                </li>
+                <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <svg
+                    height="100px"
+                    width="100px"
+                    version="1.1"
+                    id="_x32_"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 512 512"
+                    xml:space="preserve"
+                    aria-hidden="true"
+                  >
+                    <style type="text/css">
+                      .st0 {
+                        fill: #000000;
+                      }
+                    </style>
+                    <g>
+                      <path
+                        class="st0"
+                        d="M313.017,170.176c-2.922-0.841-5.968,0.854-6.801,3.784c-0.603,2.126-1.896,3.978-3.62,5.3
 		c-1.73,1.322-3.856,2.097-6.205,2.105c-2.37-0.008-4.503-0.791-6.248-2.134c-1.731-1.336-3.024-3.217-3.612-5.365
 		c-0.805-2.93-3.835-4.654-6.765-3.842c-2.938,0.811-4.654,3.835-3.85,6.765c1.25,4.51,3.921,8.396,7.505,11.16
 		c3.57,2.765,8.101,4.424,12.97,4.424c4.826,0,9.33-1.63,12.891-4.366c3.57-2.729,6.248-6.572,7.52-11.031
 		C317.636,174.054,315.941,171.009,313.017,170.176z"
-                    />
-                    <path
-                      class="st0"
-                      d="M236.073,176.977c0.833-2.916-0.861-5.968-3.784-6.801c-2.916-0.841-5.968,0.854-6.801,3.784
+                      />
+                      <path
+                        class="st0"
+                        d="M236.073,176.977c0.833-2.916-0.861-5.968-3.784-6.801c-2.916-0.841-5.968,0.854-6.801,3.784
 		c-0.61,2.126-1.903,3.978-3.627,5.3c-1.731,1.322-3.85,2.097-6.205,2.105c-2.37-0.008-4.503-0.791-6.242-2.134
 		c-1.738-1.336-3.023-3.217-3.612-5.365c-0.811-2.93-3.834-4.654-6.772-3.842c-2.937,0.811-4.654,3.835-3.842,6.765
 		c1.242,4.51,3.914,8.396,7.497,11.16c3.57,2.765,8.108,4.424,12.97,4.424c4.833,0,9.336-1.63,12.898-4.366
 		C232.123,185.279,234.795,181.436,236.073,176.977z"
-                    />
-                    <path
-                      class="st0"
-                      d="M284.772,220.519c-6.549,9.078-17.193,14.737-28.77,14.729c-11.562,0.008-22.213-5.659-28.77-14.729
+                      />
+                      <path
+                        class="st0"
+                        d="M284.772,220.519c-6.549,9.078-17.193,14.737-28.77,14.729c-11.562,0.008-22.213-5.659-28.77-14.729
 		c-1.781-2.464-5.221-3.023-7.691-1.236c-2.464,1.774-3.017,5.222-1.236,7.678c8.597,11.893,22.522,19.29,37.696,19.297
 		c15.196,0,29.115-7.404,37.697-19.297c1.781-2.464,1.221-5.904-1.243-7.685C289.994,217.496,286.553,218.056,284.772,220.519z"
-                    />
-                    <path
-                      class="st0"
-                      d="M411.873,173.588C406.257,58.35,274.259,0,256.003,0c-18.256,0-150.254,58.35-155.877,173.588
+                      />
+                      <path
+                        class="st0"
+                        d="M411.873,173.588C406.257,58.35,274.259,0,256.003,0c-18.256,0-150.254,58.35-155.877,173.588
 		C95.084,277.024,116.981,512,256.003,512C395.025,512,416.921,277.024,411.873,173.588z M242.465,83.443
 		c4.116-0.531,8.309-0.818,12.576-0.818c5.781,0,11.432,0.517,16.934,1.48c0.567,0.653,1.156,1.4,1.745,2.291
 		c2.485,3.763,4.991,9.688,5.006,19.053c0,7.081-1.487,16.173-5.696,27.621c-13.271-10.68-20.834-20.504-25.114-28.612
@@ -328,131 +360,134 @@
 		c12.928,4.108,24.691,10.794,34.702,19.498c17.265,15.023,29.229,35.944,32.748,59.614l1.163,7.806l7.807-1.192
 		c1.034-0.157,1.953-0.244,2.779-0.244c5.092,0.007,9.631,2.047,12.977,5.379c3.333,3.34,5.372,7.885,5.372,12.97
 		C382.342,196.144,380.303,200.683,376.97,204.03z"
+                      />
+                    </g>
+                  </svg>
+                  <span class="text-base font-medium leading-tight text-gray-900"
+                    ><strong>Personal Life Changes:</strong> Hummingbird Hammocks has been run
+                    entirely by a team of two. Our family has now grown to include two young boys,
+                    and we've decided to shift our focus to these new adventures and priorities.
+                    Balancing the demands of running every aspect of the business with raising our
+                    children has become increasingly challenging.
+                  </span>
+                </li>
+                <li class="flex space-x-3">
+                  <!-- Icon -->
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    fill="#000000"
+                    width="60px"
+                    height="60px"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M21.9,11.553l-3-6a.846.846,0,0,0-.164-.225A.987.987,0,0,0,18,5H13V3a1,1,0,0,0-2,0V5H6a.987.987,0,0,0-.731.328.846.846,0,0,0-.164.225l-3,6a.982.982,0,0,0-.1.447H2a4,4,0,0,0,8,0H9.99a.982.982,0,0,0-.1-.447L7.618,7H11V20H6a1,1,0,0,0,0,2H18a1,1,0,0,0,0-2H13V7h3.382l-2.277,4.553a.982.982,0,0,0-.1.447H14a4,4,0,0,0,8,0h-.01A.982.982,0,0,0,21.9,11.553ZM7.882,12H4.118L6,8.236Zm8.236,0L18,8.236,19.882,12Z"
                     />
-                  </g>
-                </svg>
-                <span class="text-base font-medium leading-tight text-gray-900"
-                  ><strong>Personal Life Changes:</strong> Hummingbird Hammocks has been run
-                  entirely by a team of two. Our family has now grown to include two young boys, and
-                  we've decided to shift our focus to these new adventures and priorities. Balancing
-                  the demands of running every aspect of the business with raising our children has
-                  become increasingly challenging.
-                </span>
-              </li>
-              <li class="flex space-x-3">
-                <!-- Icon -->
-                <?xml version="1.0" encoding="utf-8"?>
+                  </svg>
+                  <span class="text-base font-medium leading-tight text-gray-900"
+                    ><strong>Legal Challenges:</strong> Unfortunately, we've faced unexpected legal
+                    hurdles, including a lawsuit from a firm that targets small businesses with ADA
+                    compliance issues. This has put additional strain on our resources.</span
+                  >
+                </li>
+              </ul>
+              <p class="font-light lg:text-xl">
+                We want to express our heartfelt gratitude for your support and loyalty throughout
+                this incredible journey. From the bottom of our hearts, thank you for being part of
+                the Hummingbird Hammocks family. Your support has meant the world to us, and we hope
+                our products have enhanced your outdoor experiences as much as you've enriched our
+                lives.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End block -->
+      <!-- Start block -->
+      <section class="bg-[#fdfdf6]">
+        <div
+          class="items-center max-w-screen-xl px-4 py-8 mx-auto lg:grid lg:grid-cols-4 lg:gap-16 xl:gap-24 lg:py-24 lg:px-6"
+        >
+          <div class="col-span-2 mb-8">
+            <p class="text-lg font-medium text-[#34542a]">What We Achieved</p>
+            <h2 class="mt-3 mb-4 text-3xl font-extrabold tracking-tight text-gray-900 md:text-3xl">
+              10 Years of Outdoor Fun
+            </h2>
+            <p class="font-light text-gray-700 sm:text-xl">
+              We started in 2014 with a Kickstarter campaign and have since grown to serve over
+              18,000 happy campers. We've sold over 50,000 pieces of gear and planted over 21,000
+              trees in partnership with Ecologi and Eden Reforestation Projects. We've been rated
+              4.83 out of 5 stars by our customers on average over 340+ independently verified
+              reviews.
+            </p>
+            <div class="pt-6 mt-6 space-y-4 border-t border-gray-200">
+              <div>
+                <a
+                  href="https://ecologi.com/hummingbirdhammocks"
+                  class="inline-flex items-center text-base font-medium text-[#34542a] hover:text-[#0f220e] focus:outline-2 focus:outline-blue-600 focus:outline-offset-2 focus:rounded"
+                  aria-label="View Hummingbird Hammocks forest on Ecologi - environmental impact tracking"
+                >
+                  Ecologi Forest
+                  <svg
+                    class="w-5 h-5 ml-1"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://www.eden-plus.org/"
+                  class="inline-flex items-center text-base font-medium text-[#34542a] hover:text-[#0f220e] focus:outline-2 focus:outline-blue-600 focus:outline-offset-2 focus:rounded"
+                  aria-label="Learn about Eden Reforestation Projects - our tree planting partner"
+                >
+                  Eden Reforestation Projects
+                  <svg
+                    class="w-5 h-5 ml-1"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-span-2 space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0 text-center"
+          >
+            <div>
+              <?xml version="1.0" encoding="iso-8859-1"?>
+              <div class="flex flex-col items-center">
                 <svg
-                  fill="#000000"
-                  width="60px"
-                  height="60px"
-                  viewBox="0 0 24 24"
+                  class="my-2"
+                  fill="#34542a"
+                  height="80px"
+                  width="80px"
+                  version="1.1"
+                  id="Capa_1"
                   xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 490 490"
+                  xml:space="preserve"
                   aria-hidden="true"
                 >
                   <path
-                    d="M21.9,11.553l-3-6a.846.846,0,0,0-.164-.225A.987.987,0,0,0,18,5H13V3a1,1,0,0,0-2,0V5H6a.987.987,0,0,0-.731.328.846.846,0,0,0-.164.225l-3,6a.982.982,0,0,0-.1.447H2a4,4,0,0,0,8,0H9.99a.982.982,0,0,0-.1-.447L7.618,7H11V20H6a1,1,0,0,0,0,2H18a1,1,0,0,0,0-2H13V7h3.382l-2.277,4.553a.982.982,0,0,0-.1.447H14a4,4,0,0,0,8,0h-.01A.982.982,0,0,0,21.9,11.553ZM7.882,12H4.118L6,8.236Zm8.236,0L18,8.236,19.882,12Z"
-                  />
-                </svg>
-                <span class="text-base font-medium leading-tight text-gray-900"
-                  ><strong>Legal Challenges:</strong> Unfortunately, we've faced unexpected legal
-                  hurdles, including a lawsuit from a firm that targets small businesses with ADA
-                  compliance issues. This has put additional strain on our resources.</span
-                >
-              </li>
-            </ul>
-            <p class="font-light lg:text-xl">
-              We want to express our heartfelt gratitude for your support and loyalty throughout
-              this incredible journey. From the bottom of our hearts, thank you for being part of
-              the Hummingbird Hammocks family. Your support has meant the world to us, and we hope
-              our products have enhanced your outdoor experiences as much as you've enriched our
-              lives.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End block -->
-    <!-- Start block -->
-    <section class="bg-[#fdfdf6]">
-      <div
-        class="items-center max-w-screen-xl px-4 py-8 mx-auto lg:grid lg:grid-cols-4 lg:gap-16 xl:gap-24 lg:py-24 lg:px-6"
-      >
-        <div class="col-span-2 mb-8">
-          <p class="text-lg font-medium text-[#34542a]">What We Achieved</p>
-          <h2 class="mt-3 mb-4 text-3xl font-extrabold tracking-tight text-gray-900 md:text-3xl">
-            10 Years of Outdoor Fun
-          </h2>
-          <p class="font-light text-gray-700 sm:text-xl">
-            We started in 2014 with a Kickstarter campaign and have since grown to serve over 18,000
-            happy campers. We've sold over 50,000 pieces of gear and planted over 21,000 trees in
-            partnership with Ecologi and Eden Reforestation Projects. We've been rated 4.83 out of 5
-            stars by our customers on average over 340+ independently verified reviews.
-          </p>
-          <div class="pt-6 mt-6 space-y-4 border-t border-gray-200">
-            <div>
-              <a
-                href="https://ecologi.com/hummingbirdhammocks"
-                class="inline-flex items-center text-base font-medium text-[#34542a] hover:text-[#0f220e] focus:outline-2 focus:outline-blue-600 focus:outline-offset-2 focus:rounded"
-                aria-label="View Hummingbird Hammocks forest on Ecologi - environmental impact tracking"
-              >
-                Ecologi Forest
-                <svg
-                  class="w-5 h-5 ml-1"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.eden-plus.org/"
-                class="inline-flex items-center text-base font-medium text-[#34542a] hover:text-[#0f220e] focus:outline-2 focus:outline-blue-600 focus:outline-offset-2 focus:rounded"
-                aria-label="Learn about Eden Reforestation Projects - our tree planting partner"
-              >
-                Eden Reforestation Projects
-                <svg
-                  class="w-5 h-5 ml-1"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-span-2 space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0 text-center">
-          <div>
-            <?xml version="1.0" encoding="iso-8859-1"?>
-            <div class="flex flex-col items-center">
-              <svg
-                class="my-2"
-                fill="#34542a"
-                height="80px"
-                width="80px"
-                version="1.1"
-                id="Capa_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="0 0 490 490"
-                xml:space="preserve"
-                aria-hidden="true"
-              >
-                <path
-                  d="M489.676,138.714c-0.2-0.376-5-9.314-14.242-18.341c-12.355-12.068-26.794-18.447-41.755-18.447
+                    d="M489.676,138.714c-0.2-0.376-5-9.314-14.242-18.341c-12.355-12.068-26.794-18.447-41.755-18.447
 	c-7.993,0-16.194,1.78-24.528,5.313c2.51-2.207,5.296-4.541,8.328-6.912c13.121-10.259,33.609-23.277,56.707-27.033
 	c1.197-0.195,2.13-1.145,2.303-2.346c0.172-1.201-0.456-2.375-1.55-2.898c-0.745-0.356-18.483-8.729-39.616-8.729
 	c-20.957,0-47.989,8.464-60.727,47.654c-1.759-2.531-4.249-5.624-7.587-8.719c-7.049-6.532-19.381-14.32-38.109-14.32
@@ -487,152 +522,152 @@
 	c27.756-28.521,48.154-70.06,55.965-113.966c6.389-35.903,1.935-75.125-12.877-113.424c-11.867-30.683-23.314-48.781-30.49-58.279
 	c7.352-3.686,19.645-7.398,39.326-7.398c14.473,0,30.957,2.072,48.993,6.162c1.059,0.239,2.16-0.16,2.819-1.021
 	C490.089,140.84,490.185,139.673,489.676,138.714z"
-                />
-              </svg>
+                  />
+                </svg>
+              </div>
+              <h3 class="mb-2 text-2xl font-bold">Ultralight Gear Sold</h3>
+              <p class="font-light text-gray-700">
+                Over 50,000 pieces of gear sold to outdoor enthusiasts
+              </p>
             </div>
-            <h3 class="mb-2 text-2xl font-bold">Ultralight Gear Sold</h3>
-            <p class="font-light text-gray-700">
-              Over 50,000 pieces of gear sold to outdoor enthusiasts
-            </p>
-          </div>
-          <div>
-            <div class="flex flex-col items-center">
-              <svg
-                class="my-2"
-                width="80px"
-                height="80px"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-              >
-                <circle
-                  cx="12"
-                  cy="12"
-                  r="10"
-                  stroke="#34542a"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-                <path
-                  d="M9.40192 13.5C9.66523 13.9561 10.0439 14.3348 10.5 14.5981C10.9561 14.8614 11.4734 15 12 15C12.5266 15 13.0439 14.8614 13.5 14.5981C13.9561 14.3348 14.3348 13.9561 14.5981 13.5"
-                  stroke="#34542a"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-                <rect
-                  x="6.875"
-                  y="7.875"
-                  width="3.25"
-                  height="2.25"
-                  rx="1.125"
-                  fill="#34542a"
-                  stroke="#34542a"
-                  stroke-width="0.25"
-                  stroke-linecap="round"
-                />
-                <rect
-                  x="13.875"
-                  y="7.875"
-                  width="3.25"
-                  height="2.25"
-                  rx="1.125"
-                  fill="#34542a"
-                  stroke="#34542a"
-                  stroke-width="0.25"
-                  stroke-linecap="round"
-                />
-              </svg>
+            <div>
+              <div class="flex flex-col items-center">
+                <svg
+                  class="my-2"
+                  width="80px"
+                  height="80px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="#34542a"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M9.40192 13.5C9.66523 13.9561 10.0439 14.3348 10.5 14.5981C10.9561 14.8614 11.4734 15 12 15C12.5266 15 13.0439 14.8614 13.5 14.5981C13.9561 14.3348 14.3348 13.9561 14.5981 13.5"
+                    stroke="#34542a"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                  <rect
+                    x="6.875"
+                    y="7.875"
+                    width="3.25"
+                    height="2.25"
+                    rx="1.125"
+                    fill="#34542a"
+                    stroke="#34542a"
+                    stroke-width="0.25"
+                    stroke-linecap="round"
+                  />
+                  <rect
+                    x="13.875"
+                    y="7.875"
+                    width="3.25"
+                    height="2.25"
+                    rx="1.125"
+                    fill="#34542a"
+                    stroke="#34542a"
+                    stroke-width="0.25"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="mb-2 text-2xl font-bold">Happy Campers</h3>
+              <p class="font-light text-gray-700">
+                18,000+ happy hikers have used our gear to explore the great outdoors
+              </p>
             </div>
-            <h3 class="mb-2 text-2xl font-bold">Happy Campers</h3>
-            <p class="font-light text-gray-700">
-              18,000+ happy hikers have used our gear to explore the great outdoors
-            </p>
-          </div>
-          <div>
-            <div class="flex flex-col items-center">
-              <svg
-                class="my-2"
-                fill="#34542a"
-                height="80px"
-                width="80px"
-                version="1.1"
-                id="Layer_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="0 0 490.657 490.657"
-                xml:space="preserve"
-                aria-hidden="true"
-              >
-                <g>
+            <div>
+              <div class="flex flex-col items-center">
+                <svg
+                  class="my-2"
+                  fill="#34542a"
+                  height="80px"
+                  width="80px"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 490.657 490.657"
+                  xml:space="preserve"
+                  aria-hidden="true"
+                >
                   <g>
                     <g>
-                      <path
-                        d="M202.662,383.759h-36.075l-18.368-36.779c-3.627-7.232-15.467-7.232-19.093,0l-18.389,36.779H74.662
+                      <g>
+                        <path
+                          d="M202.662,383.759h-36.075l-18.368-36.779c-3.627-7.232-15.467-7.232-19.093,0l-18.389,36.779H74.662
 				c-4.309,0-8.213,2.603-9.856,6.592c-1.643,3.989-0.725,8.576,2.304,11.627l27.968,27.968l-9.536,47.723
 				c-0.875,4.331,1.024,8.768,4.779,11.115c3.755,2.368,8.533,2.176,12.075-0.491l36.267-27.2l36.267,27.2
 				c1.899,1.408,4.139,2.133,6.4,2.133c0.171,0.021,0.32,0,0.427,0c5.888,0,10.667-4.779,10.667-10.667
 				c0-1.771-0.427-3.456-1.195-4.907l-8.981-44.907l27.968-27.968c3.051-3.051,3.968-7.637,2.304-11.627
 				C210.854,386.361,206.971,383.759,202.662,383.759z"
-                      />
-                      <path
-                        d="M110.929,296.292c1.899,1.408,4.139,2.133,6.4,2.133c0.149,0,0.32,0.021,0.427,0c5.888,0,10.667-4.779,10.667-10.667
+                        />
+                        <path
+                          d="M110.929,296.292c1.899,1.408,4.139,2.133,6.4,2.133c0.149,0,0.32,0.021,0.427,0c5.888,0,10.667-4.779,10.667-10.667
 				c0-1.771-0.427-3.456-1.195-4.907l-8.981-44.907l27.968-27.968c3.051-3.051,3.968-7.637,2.304-11.627s-5.547-6.592-9.856-6.592
 				h-36.075L84.219,154.98c-3.627-7.232-15.467-7.232-19.093,0l-18.389,36.779H10.662c-4.309,0-8.213,2.603-9.856,6.592
 				c-1.643,3.989-0.725,8.576,2.304,11.627l27.968,27.968l-9.536,47.723c-0.875,4.331,1.024,8.768,4.779,11.115
 				c3.755,2.368,8.512,2.197,12.075-0.491l36.267-27.2L110.929,296.292z"
-                      />
-                      <path
-                        d="M287.995,149.092c0.149,0,0.32,0.021,0.427,0c5.888,0,10.667-4.779,10.667-10.667c0-1.771-0.427-3.456-1.195-4.907
+                        />
+                        <path
+                          d="M287.995,149.092c0.149,0,0.32,0.021,0.427,0c5.888,0,10.667-4.779,10.667-10.667c0-1.771-0.427-3.456-1.195-4.907
 				l-8.981-44.907l27.968-27.968c3.051-3.051,3.968-7.637,2.304-11.627s-5.547-6.592-9.856-6.592h-36.075L254.886,5.647
 				c-3.627-7.232-15.467-7.232-19.093,0l-18.389,36.779h-36.075c-4.309,0-8.213,2.603-9.856,6.592
 				c-1.643,3.989-0.725,8.576,2.304,11.627l27.968,27.968l-9.536,47.723c-0.875,4.331,1.024,8.768,4.779,11.115
 				c3.776,2.368,8.512,2.197,12.075-0.491l36.267-27.2l36.267,27.2C283.494,148.367,285.755,149.092,287.995,149.092z"
-                      />
-                      <path
-                        d="M489.851,198.351c-1.643-3.989-5.547-6.592-9.856-6.592h-36.075l-18.368-36.779c-3.627-7.232-15.467-7.232-19.093,0
+                        />
+                        <path
+                          d="M489.851,198.351c-1.643-3.989-5.547-6.592-9.856-6.592h-36.075l-18.368-36.779c-3.627-7.232-15.467-7.232-19.093,0
 				l-18.389,36.779h-36.075c-4.309,0-8.213,2.603-9.856,6.592c-1.643,3.989-0.725,8.576,2.304,11.627l27.968,27.968l-9.536,47.723
 				c-0.875,4.331,1.024,8.768,4.779,11.115c3.755,2.368,8.533,2.197,12.075-0.491l36.267-27.2l36.267,27.2
 				c1.899,1.408,4.139,2.133,6.4,2.133c0.171,0,0.32,0.021,0.427,0c5.888,0,10.667-4.779,10.667-10.667
 				c0-1.771-0.427-3.456-1.195-4.907l-8.981-44.907l27.968-27.968C490.577,206.905,491.494,202.34,489.851,198.351z"
-                      />
-                      <path
-                        d="M415.995,383.759h-36.075l-18.368-36.779c-3.627-7.232-15.467-7.232-19.093,0l-18.389,36.779h-36.075
+                        />
+                        <path
+                          d="M415.995,383.759h-36.075l-18.368-36.779c-3.627-7.232-15.467-7.232-19.093,0l-18.389,36.779h-36.075
 				c-4.309,0-8.213,2.603-9.856,6.592s-0.725,8.576,2.304,11.627l27.968,27.968l-9.536,47.723
 				c-0.875,4.331,1.024,8.768,4.779,11.115c3.755,2.368,8.512,2.176,12.075-0.491l36.267-27.2l36.267,27.2
 				c1.899,1.408,4.139,2.133,6.4,2.133c0.171,0.021,0.341,0,0.427,0c5.888,0,10.667-4.779,10.667-10.667
 				c0-1.771-0.427-3.456-1.195-4.907l-8.981-44.907l27.968-27.968c3.051-3.051,3.968-7.637,2.304-11.627
 				C424.187,386.361,420.305,383.759,415.995,383.759z"
-                      />
+                        />
+                      </g>
                     </g>
                   </g>
-                </g>
-              </svg>
+                </svg>
+              </div>
+              <h3 class="mb-2 text-2xl font-bold">4.83 Stars</h3>
+              <p class="font-light text-gray-700">
+                Out of 5 stars, our gear has been rated 4.83 by our customers on average over 340+
+                independently verified reviews.
+              </p>
             </div>
-            <h3 class="mb-2 text-2xl font-bold">4.83 Stars</h3>
-            <p class="font-light text-gray-700">
-              Out of 5 stars, our gear has been rated 4.83 by our customers on average over 340+
-              independently verified reviews.
-            </p>
-          </div>
-          <div>
-            <div class="flex flex-col items-center">
-              <svg
-                class="my-2"
-                fill="#34542a"
-                version="1.1"
-                id="Layer_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                width="80px"
-                height="80px"
-                viewBox="0 0 260 249"
-                enable-background="new 0 0 260 249"
-                xml:space="preserve"
-                aria-hidden="true"
-              >
-                <path
-                  d="M195.02,228.07l-3.99-52.89l15.88-28.26c2.4,0.5,4.79,0.7,7.29,0.7c19.78,0,35.86-16.08,35.86-35.86
+            <div>
+              <div class="flex flex-col items-center">
+                <svg
+                  class="my-2"
+                  fill="#34542a"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="80px"
+                  height="80px"
+                  viewBox="0 0 260 249"
+                  enable-background="new 0 0 260 249"
+                  xml:space="preserve"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M195.02,228.07l-3.99-52.89l15.88-28.26c2.4,0.5,4.79,0.7,7.29,0.7c19.78,0,35.86-16.08,35.86-35.86
 	c0-5.1-1.1-9.89-2.9-14.18c3-4,4.7-9.19,4.7-14.79c0-14.78-11.99-26.77-26.77-26.77c-4.2,0-8.19,1-11.79,2.7
 	c-0.76-2.99-2.15-5.75-4.01-8.16c-0.18,5.77-1.67,11.42-4.38,16.45c1.6,4.8,2.4,9.89,2.4,15.08c0,26.47-21.58,48.05-48.04,48.05
 	c-1.3,0-2.5-0.1-3.8-0.2l-4.8,8.57c3.58,1.55,7.54,2.41,11.69,2.41c1.4,0,2.8-0.1,4.1-0.3l12.78,23.68
@@ -653,343 +688,347 @@
 	C132.72,131.98,132.62,116.08,132.42,111.98z M179.54,152.21l-6.29-12.58c2.2-0.5,4.29-1.3,6.19-2.3h0.3
 	C179.64,139.53,179.64,148.71,179.54,152.21z M190.43,139.03c0.1,0.1,0.2,0.1,0.3,0.2c2.8,2.49,6.09,4.49,9.59,5.99l-9.49,17.48
 	C190.73,157.01,190.53,142.82,190.43,139.03z"
-                />
-              </svg>
+                  />
+                </svg>
+              </div>
+              <h3 class="mb-2 text-2xl font-bold">Trees Planted</h3>
+              <p class="font-light text-gray-700">
+                Over 21,000 trees planted in partnership with Ecologi and Eden Reforestation
+                Projects
+              </p>
             </div>
-            <h3 class="mb-2 text-2xl font-bold">Trees Planted</h3>
-            <p class="font-light text-gray-700">
-              Over 21,000 trees planted in partnership with Ecologi and Eden Reforestation Projects
-            </p>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- End block -->
-    <!-- Start block -->
-    <section class="bg-[#fdfdf6]">
-      <div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6">
-        <div class="max-w-screen-md mx-auto mb-8 text-center lg:mb-12">
-          <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900">
-            Everything Open Source
+      </section>
+      <!-- End block -->
+      <!-- Start block -->
+      <section class="bg-[#fdfdf6]">
+        <div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6">
+          <div class="max-w-screen-md mx-auto mb-8 text-center lg:mb-12">
+            <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900">
+              Everything Open Source
+            </h2>
+            <p class="mb-5 font-light text-gray-700 sm:text-xl">
+              We have always had an open-source first mentality. Furthering this idea, we have
+              re-licensed everything with MIT licenses, permitting use and reuse of everything we
+              designed for any use-case. We have also published our supplier lists and other
+              previously private information in the hopes that it may help someone else.
+            </p>
+            <p class="mb-5 font-medium text-gray-800 sm:text-lg">
+              Click on any repository link below to access designs, patterns, supplier information,
+              and code. Each repository contains detailed information about the products and how
+              they were made.
+            </p>
+          </div>
+          <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
+            <!-- Repo List Card -->
+            <div
+              class="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-[#fdfdf6] border border-gray-900 rounded-3xl shadow"
+            >
+              <h3 class="mb-4 text-2xl font-semibold">Hammocks</h3>
+              <p class="font-light text-gray-500 sm:text-lg my-4">
+                Repositories for our hammocks and tree strap products.
+              </p>
+              <a
+                href="https://github.com/HummingbirdHammocks/ultralight-hammocks"
+                class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
+                aria-label="View ultralight hammocks design repository on GitHub"
+                >Ultralight Hammocks</a
+              >
+              <a
+                href="https://github.com/HummingbirdHammocks/standard-hammocks"
+                class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
+                aria-label="View standard hammocks design repository on GitHub"
+                >Standard Hammocks</a
+              >
+              <a
+                href="https://github.com/HummingbirdHammocks/specialty-hammocks"
+                class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
+                aria-label="View specialty hammocks design repository on GitHub"
+                >Specialty Hammocks</a
+              >
+              <a
+                href="https://github.com/HummingbirdHammocks/tree-straps"
+                class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
+                aria-label="View tree straps design repository on GitHub"
+                >Tree Straps</a
+              >
+            </div>
+            <!-- Repo List Card -->
+            <div
+              class="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-[#fdfdf6] border border-gray-900 rounded-3xl shadow"
+            >
+              <h3 class="mb-4 text-2xl font-semibold">Straps & Shelters</h3>
+              <p class="font-light text-gray-500 sm:text-lg my-4">
+                Repositories for our rain tarps, bug nets, underquilts, and ground cover products.
+              </p>
+              <a
+                href="https://github.com/HummingbirdHammocks/rain-tarps"
+                class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
+                aria-label="View rain tarps design repository on GitHub"
+                >Rain Tarps</a
+              >
+              <a
+                href="https://github.com/HummingbirdHammocks/bug-nets"
+                class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
+                aria-label="View bug nets design repository on GitHub"
+                >Bug Nets</a
+              >
+              <a
+                href="https://github.com/HummingbirdHammocks/underquilts"
+                class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
+                aria-label="View underquilts design repository on GitHub"
+                >Underquilts</a
+              >
+              <a
+                href="https://github.com/HummingbirdHammocks/ground-cover"
+                class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
+                aria-label="View ground cover design repository on GitHub"
+                >Ground Cover</a
+              >
+            </div>
+            <!-- Repo List Card -->
+            <div
+              class="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-[#fdfdf6] border border-gray-900 rounded-3xl shadow"
+            >
+              <h3 class="mb-4 text-2xl font-semibold">Other</h3>
+              <p class="font-light text-gray-500 sm:text-lg my-4">
+                Repositories for our parts & accessories, website, and other small code projects.
+              </p>
+              <a
+                href="https://github.com/HummingbirdHammocks/parts-accessories"
+                class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
+                aria-label="View parts and accessories design repository on GitHub"
+                >Parts & Accessories</a
+              >
+              <a
+                href="https://github.com/HummingbirdHammocks/ultralight-hammocks"
+                class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
+                aria-label="View official website repository on GitHub"
+                >Official Website</a
+              >
+              <a
+                href="https://github.com/HummingbirdHammocks/email"
+                class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
+                aria-label="View email templates repository on GitHub"
+                >Email Templates</a
+              >
+              <a
+                href="https://github.com/HummingbirdHammocks/shipping-stork"
+                class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
+                aria-label="View shipping stork application repository on GitHub"
+                >Shipping Stork</a
+              >
+              <a
+                href="https://github.com/HummingbirdHammocks/amazon-order-alert"
+                class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
+                aria-label="View Amazon order alert application repository on GitHub"
+                >Amazon Order Alert</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End block -->
+      <!-- Start block -->
+      <section class="bg-[#fdfdf6]">
+        <div class="max-w-screen-xl px-4 pb-8 mx-auto lg:pb-24 lg:px-6">
+          <h2
+            class="mb-6 text-3xl font-extrabold tracking-tight text-center text-gray-900 lg:mb-8 lg:text-3xl"
+          >
+            Frequently Asked Questions
           </h2>
-          <p class="mb-5 font-light text-gray-700 sm:text-xl">
-            We have always had an open-source first mentality. Furthering this idea, we have
-            re-licensed everything with MIT licenses, permitting use and reuse of everything we
-            designed for any use-case. We have also published our supplier lists and other
-            previously private information in the hopes that it may help someone else.
+          <p class="mb-8 text-center text-gray-600 max-w-2xl mx-auto">
+            Click on any question below to expand and view the answer. Use the Tab key to navigate
+            between questions and Enter or Space to expand them.
           </p>
-          <p class="mb-5 font-medium text-gray-800 sm:text-lg">
-            Click on any repository link below to access designs, patterns, supplier information, and code. Each repository contains detailed information about the products and how they were made.
-          </p>
-        </div>
-        <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
-          <!-- Repo List Card -->
-          <div
-            class="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-[#fdfdf6] border border-gray-900 rounded-3xl shadow"
-          >
-            <h3 class="mb-4 text-2xl font-semibold">Hammocks</h3>
-            <p class="font-light text-gray-500 sm:text-lg my-4">
-              Repositories for our hammocks and tree strap products.
-            </p>
-            <a
-              href="https://github.com/HummingbirdHammocks/ultralight-hammocks"
-              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
-              aria-label="View ultralight hammocks design repository on GitHub"
-              >Ultralight Hammocks</a
-            >
-            <a
-              href="https://github.com/HummingbirdHammocks/standard-hammocks"
-              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
-              aria-label="View standard hammocks design repository on GitHub"
-              >Standard Hammocks</a
-            >
-            <a
-              href="https://github.com/HummingbirdHammocks/specialty-hammocks"
-              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
-              aria-label="View specialty hammocks design repository on GitHub"
-              >Specialty Hammocks</a
-            >
-            <a
-              href="https://github.com/HummingbirdHammocks/tree-straps"
-              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
-              aria-label="View tree straps design repository on GitHub"
-              >Tree Straps</a
-            >
-          </div>
-          <!-- Repo List Card -->
-          <div
-            class="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-[#fdfdf6] border border-gray-900 rounded-3xl shadow"
-          >
-            <h3 class="mb-4 text-2xl font-semibold">Straps & Shelters</h3>
-            <p class="font-light text-gray-500 sm:text-lg my-4">
-              Repositories for our rain tarps, bug nets, underquilts, and ground cover products.
-            </p>
-            <a
-              href="https://github.com/HummingbirdHammocks/rain-tarps"
-              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
-              aria-label="View rain tarps design repository on GitHub"
-              >Rain Tarps</a
-            >
-            <a
-              href="https://github.com/HummingbirdHammocks/bug-nets"
-              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
-              aria-label="View bug nets design repository on GitHub"
-              >Bug Nets</a
-            >
-            <a
-              href="https://github.com/HummingbirdHammocks/underquilts"
-              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
-              aria-label="View underquilts design repository on GitHub"
-              >Underquilts</a
-            >
-            <a
-              href="https://github.com/HummingbirdHammocks/ground-cover"
-              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
-              aria-label="View ground cover design repository on GitHub"
-              >Ground Cover</a
-            >
-          </div>
-          <!-- Repo List Card -->
-          <div
-            class="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-[#fdfdf6] border border-gray-900 rounded-3xl shadow"
-          >
-            <h3 class="mb-4 text-2xl font-semibold">Other</h3>
-            <p class="font-light text-gray-500 sm:text-lg my-4">
-              Repositories for our parts & accessories, website, and other small code projects.
-            </p>
-            <a
-              href="https://github.com/HummingbirdHammocks/parts-accessories"
-              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
-              aria-label="View parts and accessories design repository on GitHub"
-              >Parts & Accessories</a
-            >
-            <a
-              href="https://github.com/HummingbirdHammocks/ultralight-hammocks"
-              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
-              aria-label="View official website repository on GitHub"
-              >Official Website</a
-            >
-            <a
-              href="https://github.com/HummingbirdHammocks/email"
-              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
-              aria-label="View email templates repository on GitHub"
-              >Email Templates</a
-            >
-            <a
-              href="https://github.com/HummingbirdHammocks/shipping-stork"
-              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
-              aria-label="View shipping stork application repository on GitHub"
-              >Shipping Stork</a
-            >
-            <a
-              href="https://github.com/HummingbirdHammocks/amazon-order-alert"
-              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
-              aria-label="View Amazon order alert application repository on GitHub"
-              >Amazon Order Alert</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End block -->
-    <!-- Start block -->
-    <section class="bg-[#fdfdf6]">
-      <div class="max-w-screen-xl px-4 pb-8 mx-auto lg:pb-24 lg:px-6">
-        <h2
-          class="mb-6 text-3xl font-extrabold tracking-tight text-center text-gray-900 lg:mb-8 lg:text-3xl"
-        >
-          Frequently Asked Questions
-        </h2>
-        <p class="mb-8 text-center text-gray-600 max-w-2xl mx-auto">
-          Click on any question below to expand and view the answer. Use the Tab key to navigate between questions and Enter or Space to expand them.
-        </p>
-        <div class="max-w-screen-md mx-auto">
-          <div
-            id="accordion-flush"
-            data-accordion="collapse"
-            data-active-classes="bg-[#fdfdf6]"
-            data-inactive-classes="text-gray-500"
-          >
-            <h3 id="accordion-flush-heading-1">
-              <button
-                type="button"
-                class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-700 bg-[#fdfdf6] border-b border-gray-200 focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
-                data-accordion-target="#accordion-flush-body-1"
-                aria-expanded="true"
-                aria-controls="accordion-flush-body-1"
-                aria-label="Expand to view recommended alternative brands for outdoor gear"
-              >
-                <span>Do you have other brands you recommend?</span>
-                <svg
-                  data-accordion-icon=""
-                  class="w-6 h-6 rotate-180 shrink-0"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </button>
-            </h3>
-            <div id="accordion-flush-body-1" class="" aria-labelledby="accordion-flush-heading-1">
-              <div class="py-5 border-b border-gray-200">
-                <p class="mb-2 text-gray-500">
-                  As an all-around recommendation we would like to point you in the direction of
-                  Kammock:
-                  <a
-                    href="https://kammok.com/"
-                    class="inline-flex items-center text-base font-medium text-[#34542a] hover:text-[#0f220e] focus:outline-2 focus:outline-blue-600 focus:outline-offset-2 focus:rounded"
-                    aria-label="Visit Kammock website - recommended hammock alternative"
-                    >https://kammok.com/</a
-                  >
-                </p>
-                <p class="mb-2 text-gray-500">
-                  DutchWare sells tree straps and other cordage products that are similar in
-                  function and weight to our products:
-                  <a
-                    href="https://dutchwaregear.com/"
-                    class="inline-flex items-center text-base font-medium text-[#34542a] hover:text-[#0f220e] focus:outline-2 focus:outline-blue-600 focus:outline-offset-2 focus:rounded"
-                    aria-label="Visit DutchWare Gear website - recommended tree straps alternative"
-                    >https://dutchwaregear.com/</a
-                  >
-                </p>
-              </div>
-            </div>
-            <h3 id="accordion-flush-heading-2">
-              <button
-                type="button"
-                class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-700 bg-[#fdfdf6] border-b border-gray-200 focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
-                data-accordion-target="#accordion-flush-body-2"
-                aria-expanded="false"
-                aria-controls="accordion-flush-body-2"
-                aria-label="Expand to learn about using open source designs for personal or commercial projects"
-              >
-                <span>Can I use these designs for my personal or commercial project?</span>
-                <svg
-                  data-accordion-icon=""
-                  class="w-6 h-6 rotate-180 shrink-0"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </button>
-            </h3>
-            <div id="accordion-flush-body-2" class="" aria-labelledby="accordion-flush-heading-2">
-              <div class="py-5 border-b border-gray-200">
-                <p class="mb-2 text-gray-500">
-                  Yep! All of our work is open source under the MIT license. This means you can use
-                  it for any project - personal or commercial, without any restrictions.
-                </p>
-                <p class="text-gray-500">
-                  We appreciate any credit, but it is not required. All of these designs are
-                  provided as-is and we are not responsible for any issues that may arise when using
-                  them in your projects.
-                </p>
-              </div>
-            </div>
-            <h3 id="accordion-flush-heading-3">
-              <button
-                type="button"
-                class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-700 bg-[#fdfdf6] border-b border-gray-200 focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
-                data-accordion-target="#accordion-flush-body-3"
-                aria-expanded="false"
-                aria-controls="accordion-flush-body-3"
-                aria-label="Expand to learn about support options for existing gear issues"
-              >
-                <span>I have an issue with my gear, can you help me?</span>
-                <svg
-                  data-accordion-icon=""
-                  class="w-6 h-6 shrink-0"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </button>
-            </h3>
+          <div class="max-w-screen-md mx-auto">
             <div
-              id="accordion-flush-body-3"
-              class="hidden"
-              aria-labelledby="accordion-flush-heading-3"
+              id="accordion-flush"
+              data-accordion="collapse"
+              data-active-classes="bg-[#fdfdf6]"
+              data-inactive-classes="text-gray-500"
             >
-              <div class="py-5 border-b border-gray-200">
-                <p class="mb-2 text-gray-500">
-                  Unfortunately no, we are not able to provide additional support.
-                </p>
-                <p class="text-gray-500">
-                  All existing tickets and support requests will be addressed but we are not able to
-                  provide any new support. Our email and social media accounts are no longer
-                  monitored.
-                </p>
+              <h3 id="accordion-flush-heading-1">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-700 bg-[#fdfdf6] border-b border-gray-200 focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
+                  data-accordion-target="#accordion-flush-body-1"
+                  aria-expanded="true"
+                  aria-controls="accordion-flush-body-1"
+                  aria-label="Expand to view recommended alternative brands for outdoor gear"
+                >
+                  <span>Do you have other brands you recommend?</span>
+                  <svg
+                    data-accordion-icon=""
+                    class="w-6 h-6 rotate-180 shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </h3>
+              <div id="accordion-flush-body-1" class="" aria-labelledby="accordion-flush-heading-1">
+                <div class="py-5 border-b border-gray-200">
+                  <p class="mb-2 text-gray-500">
+                    As an all-around recommendation we would like to point you in the direction of
+                    Kammock:
+                    <a
+                      href="https://kammok.com/"
+                      class="inline-flex items-center text-base font-medium text-[#34542a] hover:text-[#0f220e] focus:outline-2 focus:outline-blue-600 focus:outline-offset-2 focus:rounded"
+                      aria-label="Visit Kammock website - recommended hammock alternative"
+                      >https://kammok.com/</a
+                    >
+                  </p>
+                  <p class="mb-2 text-gray-500">
+                    DutchWare sells tree straps and other cordage products that are similar in
+                    function and weight to our products:
+                    <a
+                      href="https://dutchwaregear.com/"
+                      class="inline-flex items-center text-base font-medium text-[#34542a] hover:text-[#0f220e] focus:outline-2 focus:outline-blue-600 focus:outline-offset-2 focus:rounded"
+                      aria-label="Visit DutchWare Gear website - recommended tree straps alternative"
+                      >https://dutchwaregear.com/</a
+                    >
+                  </p>
+                </div>
               </div>
-            </div>
-            <h3 id="accordion-flush-heading-4">
-              <button
-                type="button"
-                class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-700 bg-[#fdfdf6] border-b border-gray-200 focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
-                data-accordion-target="#accordion-flush-body-4"
-                aria-expanded="false"
-                aria-controls="accordion-flush-body-4"
-                aria-label="Expand to find instructions and resources for making hammocks"
+              <h3 id="accordion-flush-heading-2">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-700 bg-[#fdfdf6] border-b border-gray-200 focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
+                  data-accordion-target="#accordion-flush-body-2"
+                  aria-expanded="false"
+                  aria-controls="accordion-flush-body-2"
+                  aria-label="Expand to learn about using open source designs for personal or commercial projects"
+                >
+                  <span>Can I use these designs for my personal or commercial project?</span>
+                  <svg
+                    data-accordion-icon=""
+                    class="w-6 h-6 rotate-180 shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </h3>
+              <div id="accordion-flush-body-2" class="" aria-labelledby="accordion-flush-heading-2">
+                <div class="py-5 border-b border-gray-200">
+                  <p class="mb-2 text-gray-500">
+                    Yep! All of our work is open source under the MIT license. This means you can
+                    use it for any project - personal or commercial, without any restrictions.
+                  </p>
+                  <p class="text-gray-500">
+                    We appreciate any credit, but it is not required. All of these designs are
+                    provided as-is and we are not responsible for any issues that may arise when
+                    using them in your projects.
+                  </p>
+                </div>
+              </div>
+              <h3 id="accordion-flush-heading-3">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-700 bg-[#fdfdf6] border-b border-gray-200 focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
+                  data-accordion-target="#accordion-flush-body-3"
+                  aria-expanded="false"
+                  aria-controls="accordion-flush-body-3"
+                  aria-label="Expand to learn about support options for existing gear issues"
+                >
+                  <span>I have an issue with my gear, can you help me?</span>
+                  <svg
+                    data-accordion-icon=""
+                    class="w-6 h-6 shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="accordion-flush-body-3"
+                class="hidden"
+                aria-labelledby="accordion-flush-heading-3"
               >
-                <span>Are there instructions on how to make a hammock?</span>
-                <svg
-                  data-accordion-icon=""
-                  class="w-6 h-6 shrink-0"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
+                <div class="py-5 border-b border-gray-200">
+                  <p class="mb-2 text-gray-500">
+                    Unfortunately no, we are not able to provide additional support.
+                  </p>
+                  <p class="text-gray-500">
+                    All existing tickets and support requests will be addressed but we are not able
+                    to provide any new support. Our email and social media accounts are no longer
+                    monitored.
+                  </p>
+                </div>
+              </div>
+              <h3 id="accordion-flush-heading-4">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-700 bg-[#fdfdf6] border-b border-gray-200 focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
+                  data-accordion-target="#accordion-flush-body-4"
+                  aria-expanded="false"
+                  aria-controls="accordion-flush-body-4"
+                  aria-label="Expand to find instructions and resources for making hammocks"
                 >
-                  <path
-                    fill-rule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </button>
-            </h3>
-            <div
-              id="accordion-flush-body-4"
-              class="hidden"
-              aria-labelledby="accordion-flush-heading-4"
-            >
-              <div class="py-5 border-b border-gray-200">
-                <p class="mb-2 text-gray-500">
-                  We don't have internal instructions to publish but there are many great resources.
-                  We recommend checking out the following guide from The Ultimate Hang:
-                </p>
-                <a
-                  href="https://theultimatehang.com/2013/10/29/make-hammock-3-minutes/"
-                  class="inline-flex items-center text-base font-medium text-[#34542a] hover:text-[#0f220e] focus:outline-2 focus:outline-blue-600 focus:outline-offset-2 focus:rounded"
-                  aria-label="Read The Ultimate Hang guide on making a hammock in 3 minutes"
-                  >How to Make A Hammock in 3 Minutes</a
-                >
+                  <span>Are there instructions on how to make a hammock?</span>
+                  <svg
+                    data-accordion-icon=""
+                    class="w-6 h-6 shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </h3>
+              <div
+                id="accordion-flush-body-4"
+                class="hidden"
+                aria-labelledby="accordion-flush-heading-4"
+              >
+                <div class="py-5 border-b border-gray-200">
+                  <p class="mb-2 text-gray-500">
+                    We don't have internal instructions to publish but there are many great
+                    resources. We recommend checking out the following guide from The Ultimate Hang:
+                  </p>
+                  <a
+                    href="https://theultimatehang.com/2013/10/29/make-hammock-3-minutes/"
+                    class="inline-flex items-center text-base font-medium text-[#34542a] hover:text-[#0f220e] focus:outline-2 focus:outline-blue-600 focus:outline-offset-2 focus:rounded"
+                    aria-label="Read The Ultimate Hang guide on making a hammock in 3 minutes"
+                    >How to Make A Hammock in 3 Minutes</a
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- End block -->
+      </section>
+      <!-- End block -->
     </main>
     <footer class="bg-[#fdfdf6] my-8">
       <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
