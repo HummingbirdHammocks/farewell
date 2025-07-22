@@ -39,8 +39,14 @@
     <meta name="theme-color" content="#ffffff" />
     <link href="./flowbite.css" rel="stylesheet" />
     <link href="./output.css" rel="stylesheet" />
+    <style>
+      .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+      .focus\:not-sr-only:focus { position: static; width: auto; height: auto; padding: 0.5rem 1rem; margin: 0; overflow: visible; clip: auto; white-space: normal; }
+    </style>
   </head>
   <body class="bg-[#fdfdf6]">
+    <!-- Skip Navigation Link -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded-md z-50 focus:outline-2 focus:outline-blue-800 focus:outline-offset-2">Skip to main content</a>
     <header class="fixed w-full">
       <nav class="bg-[#fdfdf6] border-gray-200 py-2.5">
         <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
@@ -53,7 +59,8 @@
           <div class="flex items-center lg:order-2">
             <a
               href="https://github.com/HummingbirdHammocks"
-              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-purple-300 font-medium rounded-3xl text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 focus:outline-none"
+              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
+              aria-label="Visit Hummingbird Hammocks GitHub repositories"
               >GitHub</a
             >
           </div>
@@ -61,11 +68,13 @@
       </nav>
     </header>
 
-    <!-- Start block -->
-    <section
-      class="bg-cover bg-center bg-no-repeat"
-      style="background-image: url('./images/SimpleVectorLakesideHammockCampsite.jpg')"
-    >
+    <!-- Main Content -->
+    <main id="main-content">
+      <!-- Start block -->
+      <section
+        class="bg-cover bg-center bg-no-repeat"
+        style="background-image: url('./images/SimpleVectorLakesideHammockCampsite.jpg')"
+      >
       <div
         class="grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28"
       >
@@ -100,7 +109,7 @@
       <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
         <!-- Row -->
         <div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
-          <div class="text-gray-500 sm:text-lg">
+          <div class="text-gray-700 sm:text-lg">
             <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900">
               What was Hummingbird Hammocks?
             </h2>
@@ -118,6 +127,7 @@
                   height="24px"
                   viewBox="0 0 512 512"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <path
                     fill="#000000"
@@ -136,6 +146,7 @@
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <path
                     d="M6.25 4.5C5.2835 4.5 4.5 5.2835 4.5 6.25V7.75C4.5 8.16421 4.16421 8.5 3.75 8.5C3.33579 8.5 3 8.16421 3 7.75V6.25C3 4.45507 4.45507 3 6.25 3H7.75C8.16421 3 8.5 3.33579 8.5 3.75C8.5 4.16421 8.16421 4.5 7.75 4.5H6.25Z"
@@ -174,6 +185,7 @@
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                   viewBox="0 0 512 512"
                   xml:space="preserve"
+                  aria-hidden="true"
                 >
                   <g>
                     <g>
@@ -211,7 +223,7 @@
             src="./images/SingleHammockSlateGrayInCanyon.jpg"
             alt="Slate Gray Single Hammock hanging in a canyon"
           />
-          <div class="text-gray-500 sm:text-lg">
+          <div class="text-gray-700 sm:text-lg">
             <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900">
               Why did we close?
             </h2>
@@ -233,6 +245,7 @@
                   height="60px"
                   viewBox="0 0 32 32"
                   xml:space="preserve"
+                  aria-hidden="true"
                 >
                   <style type="text/css">
                     .afiado_een {
@@ -261,6 +274,7 @@
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                   viewBox="0 0 512 512"
                   xml:space="preserve"
+                  aria-hidden="true"
                 >
                   <style type="text/css">
                     .st0 {
@@ -334,6 +348,7 @@
                   height="60px"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <path
                     d="M21.9,11.553l-3-6a.846.846,0,0,0-.164-.225A.987.987,0,0,0,18,5H13V3a1,1,0,0,0-2,0V5H6a.987.987,0,0,0-.731.328.846.846,0,0,0-.164.225l-3,6a.982.982,0,0,0-.1.447H2a4,4,0,0,0,8,0H9.99a.982.982,0,0,0-.1-.447L7.618,7H11V20H6a1,1,0,0,0,0,2H18a1,1,0,0,0,0-2H13V7h3.382l-2.277,4.553a.982.982,0,0,0-.1.447H14a4,4,0,0,0,8,0h-.01A.982.982,0,0,0,21.9,11.553ZM7.882,12H4.118L6,8.236Zm8.236,0L18,8.236,19.882,12Z"
@@ -368,7 +383,7 @@
           <h2 class="mt-3 mb-4 text-3xl font-extrabold tracking-tight text-gray-900 md:text-3xl">
             10 Years of Outdoor Fun
           </h2>
-          <p class="font-light text-gray-500 sm:text-xl">
+          <p class="font-light text-gray-700 sm:text-xl">
             We started in 2014 with a Kickstarter campaign and have since grown to serve over 18,000
             happy campers. We've sold over 50,000 pieces of gear and planted over 21,000 trees in
             partnership with Ecologi and Eden Reforestation Projects. We've been rated 4.83 out of 5
@@ -378,7 +393,8 @@
             <div>
               <a
                 href="https://ecologi.com/hummingbirdhammocks"
-                class="inline-flex items-center text-base font-medium text-[#34542a] hover:text-[#0f220e]"
+                class="inline-flex items-center text-base font-medium text-[#34542a] hover:text-[#0f220e] focus:outline-2 focus:outline-blue-600 focus:outline-offset-2 focus:rounded"
+                aria-label="View Hummingbird Hammocks forest on Ecologi - environmental impact tracking"
               >
                 Ecologi Forest
                 <svg
@@ -398,7 +414,8 @@
             <div>
               <a
                 href="https://www.eden-plus.org/"
-                class="inline-flex items-center text-base font-medium text-[#34542a] hover:text-[#0f220e]"
+                class="inline-flex items-center text-base font-medium text-[#34542a] hover:text-[#0f220e] focus:outline-2 focus:outline-blue-600 focus:outline-offset-2 focus:rounded"
+                aria-label="Learn about Eden Reforestation Projects - our tree planting partner"
               >
                 Eden Reforestation Projects
                 <svg
@@ -432,6 +449,7 @@
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 viewBox="0 0 490 490"
                 xml:space="preserve"
+                aria-hidden="true"
               >
                 <path
                   d="M489.676,138.714c-0.2-0.376-5-9.314-14.242-18.341c-12.355-12.068-26.794-18.447-41.755-18.447
@@ -473,7 +491,7 @@
               </svg>
             </div>
             <h3 class="mb-2 text-2xl font-bold">Ultralight Gear Sold</h3>
-            <p class="font-light text-gray-500">
+            <p class="font-light text-gray-700">
               Over 50,000 pieces of gear sold to outdoor enthusiasts
             </p>
           </div>
@@ -486,6 +504,7 @@
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <circle
                   cx="12"
@@ -526,7 +545,7 @@
               </svg>
             </div>
             <h3 class="mb-2 text-2xl font-bold">Happy Campers</h3>
-            <p class="font-light text-gray-500">
+            <p class="font-light text-gray-700">
               18,000+ happy hikers have used our gear to explore the great outdoors
             </p>
           </div>
@@ -543,6 +562,7 @@
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 viewBox="0 0 490.657 490.657"
                 xml:space="preserve"
+                aria-hidden="true"
               >
                 <g>
                   <g>
@@ -590,7 +610,7 @@
               </svg>
             </div>
             <h3 class="mb-2 text-2xl font-bold">4.83 Stars</h3>
-            <p class="font-light text-gray-500">
+            <p class="font-light text-gray-700">
               Out of 5 stars, our gear has been rated 4.83 by our customers on average over 340+
               independently verified reviews.
             </p>
@@ -609,6 +629,7 @@
                 viewBox="0 0 260 249"
                 enable-background="new 0 0 260 249"
                 xml:space="preserve"
+                aria-hidden="true"
               >
                 <path
                   d="M195.02,228.07l-3.99-52.89l15.88-28.26c2.4,0.5,4.79,0.7,7.29,0.7c19.78,0,35.86-16.08,35.86-35.86
@@ -636,7 +657,7 @@
               </svg>
             </div>
             <h3 class="mb-2 text-2xl font-bold">Trees Planted</h3>
-            <p class="font-light text-gray-500">
+            <p class="font-light text-gray-700">
               Over 21,000 trees planted in partnership with Ecologi and Eden Reforestation Projects
             </p>
           </div>
@@ -651,7 +672,7 @@
           <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900">
             Everything Open Source
           </h2>
-          <p class="mb-5 font-light text-gray-500 sm:text-xl">
+          <p class="mb-5 font-light text-gray-700 sm:text-xl">
             We have always had an open-source first mentality. Furthering this idea, we have
             re-licensed everything with MIT licenses, permitting use and reuse of everything we
             designed for any use-case. We have also published our supplier lists and other
@@ -669,22 +690,26 @@
             </p>
             <a
               href="https://github.com/HummingbirdHammocks/ultralight-hammocks"
-              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-purple-200 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center"
+              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
+              aria-label="View ultralight hammocks design repository on GitHub"
               >Ultralight Hammocks</a
             >
             <a
               href="https://github.com/HummingbirdHammocks/standard-hammocks"
-              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-purple-200 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center"
+              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
+              aria-label="View standard hammocks design repository on GitHub"
               >Standard Hammocks</a
             >
             <a
               href="https://github.com/HummingbirdHammocks/specialty-hammocks"
-              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-purple-200 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center"
+              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
+              aria-label="View specialty hammocks design repository on GitHub"
               >Specialty Hammocks</a
             >
             <a
               href="https://github.com/HummingbirdHammocks/tree-straps"
-              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-purple-200 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center"
+              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
+              aria-label="View tree straps design repository on GitHub"
               >Tree Straps</a
             >
           </div>
@@ -698,22 +723,26 @@
             </p>
             <a
               href="https://github.com/HummingbirdHammocks/rain-tarps"
-              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-purple-200 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center"
+              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
+              aria-label="View rain tarps design repository on GitHub"
               >Rain Tarps</a
             >
             <a
               href="https://github.com/HummingbirdHammocks/bug-nets"
-              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-purple-200 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center"
+              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
+              aria-label="View bug nets design repository on GitHub"
               >Bug Nets</a
             >
             <a
               href="https://github.com/HummingbirdHammocks/underquilts"
-              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-purple-200 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center"
-              >Underquits</a
+              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
+              aria-label="View underquilts design repository on GitHub"
+              >Underquilts</a
             >
             <a
               href="https://github.com/HummingbirdHammocks/ground-cover"
-              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-purple-200 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center"
+              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
+              aria-label="View ground cover design repository on GitHub"
               >Ground Cover</a
             >
           </div>
@@ -727,27 +756,32 @@
             </p>
             <a
               href="https://github.com/HummingbirdHammocks/parts-accessories"
-              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-purple-200 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center"
+              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
+              aria-label="View parts and accessories design repository on GitHub"
               >Parts & Accessories</a
             >
             <a
               href="https://github.com/HummingbirdHammocks/ultralight-hammocks"
-              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-purple-200 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center"
+              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
+              aria-label="View official website repository on GitHub"
               >Official Website</a
             >
             <a
               href="https://github.com/HummingbirdHammocks/email"
-              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-purple-200 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center"
+              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
+              aria-label="View email templates repository on GitHub"
               >Email Templates</a
             >
             <a
               href="https://github.com/HummingbirdHammocks/shipping-stork"
-              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-purple-200 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center"
+              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
+              aria-label="View shipping stork application repository on GitHub"
               >Shipping Stork</a
             >
             <a
               href="https://github.com/HummingbirdHammocks/amazon-order-alert"
-              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-purple-200 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center"
+              class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-5 py-2.5 my-2 text-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
+              aria-label="View Amazon order alert application repository on GitHub"
               >Amazon Order Alert</a
             >
           </div>
@@ -773,7 +807,7 @@
             <h3 id="accordion-flush-heading-1">
               <button
                 type="button"
-                class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 bg-[#fdfdf6] border-b border-gray-200"
+                class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-700 bg-[#fdfdf6] border-b border-gray-200 focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
                 data-accordion-target="#accordion-flush-body-1"
                 aria-expanded="true"
                 aria-controls="accordion-flush-body-1"
@@ -785,6 +819,7 @@
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <path
                     fill-rule="evenodd"
@@ -801,7 +836,8 @@
                   Kammock:
                   <a
                     href="https://kammok.com/"
-                    class="inline-flex items-center text-base font-medium text-[#34542a] hover:text-[#0f220e]"
+                    class="inline-flex items-center text-base font-medium text-[#34542a] hover:text-[#0f220e] focus:outline-2 focus:outline-blue-600 focus:outline-offset-2 focus:rounded"
+                    aria-label="Visit Kammock website - recommended hammock alternative"
                     >https://kammok.com/</a
                   >
                 </p>
@@ -810,7 +846,8 @@
                   function and weight to our products:
                   <a
                     href="https://dutchwaregear.com/"
-                    class="inline-flex items-center text-base font-medium text-[#34542a] hover:text-[#0f220e]"
+                    class="inline-flex items-center text-base font-medium text-[#34542a] hover:text-[#0f220e] focus:outline-2 focus:outline-blue-600 focus:outline-offset-2 focus:rounded"
+                    aria-label="Visit DutchWare Gear website - recommended tree straps alternative"
                     >https://dutchwaregear.com/</a
                   >
                 </p>
@@ -819,7 +856,7 @@
             <h3 id="accordion-flush-heading-2">
               <button
                 type="button"
-                class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 bg-[#fdfdf6] border-b border-gray-200"
+                class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-700 bg-[#fdfdf6] border-b border-gray-200 focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
                 data-accordion-target="#accordion-flush-body-2"
                 aria-expanded="false"
                 aria-controls="accordion-flush-body-2"
@@ -831,6 +868,7 @@
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <path
                     fill-rule="evenodd"
@@ -856,7 +894,7 @@
             <h3 id="accordion-flush-heading-3">
               <button
                 type="button"
-                class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200"
+                class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-700 bg-[#fdfdf6] border-b border-gray-200 focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
                 data-accordion-target="#accordion-flush-body-3"
                 aria-expanded="false"
                 aria-controls="accordion-flush-body-3"
@@ -868,6 +906,7 @@
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <path
                     fill-rule="evenodd"
@@ -896,7 +935,7 @@
             <h3 id="accordion-flush-heading-4">
               <button
                 type="button"
-                class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200"
+                class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-700 bg-[#fdfdf6] border-b border-gray-200 focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
                 data-accordion-target="#accordion-flush-body-4"
                 aria-expanded="false"
                 aria-controls="accordion-flush-body-4"
@@ -908,6 +947,7 @@
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <path
                     fill-rule="evenodd"
@@ -929,7 +969,8 @@
                 </p>
                 <a
                   href="https://theultimatehang.com/2013/10/29/make-hammock-3-minutes/"
-                  class="inline-flex items-center text-base font-medium text-[#34542a] hover:text-[#0f220e]"
+                  class="inline-flex items-center text-base font-medium text-[#34542a] hover:text-[#0f220e] focus:outline-2 focus:outline-blue-600 focus:outline-offset-2 focus:rounded"
+                  aria-label="Read The Ultimate Hang guide on making a hammock in 3 minutes"
                   >How to Make A Hammock in 3 Minutes</a
                 >
               </div>
@@ -939,12 +980,14 @@
       </div>
     </section>
     <!-- End block -->
+    </main>
     <footer class="bg-[#fdfdf6] my-8">
       <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
       <div class="text-center">
         <a
           href="#"
-          class="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900"
+          class="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900 focus:outline-2 focus:outline-blue-600 focus:outline-offset-2 focus:rounded"
+          aria-label="Return to top of page"
         >
           <img src="./images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Hummingbird Hammocks Logo" />
           Hummingbird Hammocks
