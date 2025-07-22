@@ -50,7 +50,7 @@
     <header class="fixed w-full">
       <nav class="bg-[#fdfdf6] border-gray-200 py-2.5">
         <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
-          <a href="#" class="flex items-center">
+          <a href="#main-content" class="flex items-center focus:outline-2 focus:outline-blue-600 focus:outline-offset-2 focus:rounded" aria-label="Hummingbird Hammocks - Skip to main content">
             <img src="./images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Hummingbird Hammocks Logo" />
             <span class="self-center text-xl font-semibold whitespace-nowrap"
               >Hummingbird Hammocks</span
@@ -60,8 +60,8 @@
             <a
               href="https://github.com/HummingbirdHammocks"
               class="text-white bg-[#34542a] hover:bg-[#0f220e] focus:ring-4 focus:ring-blue-600 font-medium rounded-3xl text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 focus:outline-2 focus:outline-blue-600 focus:outline-offset-2"
-              aria-label="Visit Hummingbird Hammocks GitHub repositories"
-              >GitHub</a
+              aria-label="Visit Hummingbird Hammocks GitHub repositories - View all open source designs and code"
+              >View GitHub Repositories</a
             >
           </div>
         </div>
@@ -678,6 +678,9 @@
             designed for any use-case. We have also published our supplier lists and other
             previously private information in the hopes that it may help someone else.
           </p>
+          <p class="mb-5 font-medium text-gray-800 sm:text-lg">
+            Click on any repository link below to access designs, patterns, supplier information, and code. Each repository contains detailed information about the products and how they were made.
+          </p>
         </div>
         <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
           <!-- Repo List Card -->
@@ -797,6 +800,9 @@
         >
           Frequently Asked Questions
         </h2>
+        <p class="mb-8 text-center text-gray-600 max-w-2xl mx-auto">
+          Click on any question below to expand and view the answer. Use the Tab key to navigate between questions and Enter or Space to expand them.
+        </p>
         <div class="max-w-screen-md mx-auto">
           <div
             id="accordion-flush"
@@ -811,6 +817,7 @@
                 data-accordion-target="#accordion-flush-body-1"
                 aria-expanded="true"
                 aria-controls="accordion-flush-body-1"
+                aria-label="Expand to view recommended alternative brands for outdoor gear"
               >
                 <span>Do you have other brands you recommend?</span>
                 <svg
@@ -860,6 +867,7 @@
                 data-accordion-target="#accordion-flush-body-2"
                 aria-expanded="false"
                 aria-controls="accordion-flush-body-2"
+                aria-label="Expand to learn about using open source designs for personal or commercial projects"
               >
                 <span>Can I use these designs for my personal or commercial project?</span>
                 <svg
@@ -898,6 +906,7 @@
                 data-accordion-target="#accordion-flush-body-3"
                 aria-expanded="false"
                 aria-controls="accordion-flush-body-3"
+                aria-label="Expand to learn about support options for existing gear issues"
               >
                 <span>I have an issue with my gear, can you help me?</span>
                 <svg
@@ -939,6 +948,7 @@
                 data-accordion-target="#accordion-flush-body-4"
                 aria-expanded="false"
                 aria-controls="accordion-flush-body-4"
+                aria-label="Expand to find instructions and resources for making hammocks"
               >
                 <span>Are there instructions on how to make a hammock?</span>
                 <svg
@@ -985,9 +995,9 @@
       <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
       <div class="text-center">
         <a
-          href="#"
+          href="#main-content"
           class="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900 focus:outline-2 focus:outline-blue-600 focus:outline-offset-2 focus:rounded"
-          aria-label="Return to top of page"
+          aria-label="Return to main content at top of page"
         >
           <img src="./images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Hummingbird Hammocks Logo" />
           Hummingbird Hammocks
